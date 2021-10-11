@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Nucamp Fullstack Web and Mobile Development Portfolio Project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "James Van Meter",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

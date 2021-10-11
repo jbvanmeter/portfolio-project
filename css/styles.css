@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px #000000;
+}
+
+.index-background {
+    background: linear-gradient(to bottom, #222831, #37414F);
+}
+
+.navbar {
+    border-bottom: 3px groove #37414F;
+}
+
+.navbar .active {
+    border-bottom: 3px outset #FFFFFF;
+}
+
+.navbar .nav-link {
+    color: #FFFFFF; 
+}
+
+.jumbotron {
+    background: linear-gradient(to bottom, #222831, #37414F);
+    color: #FFFFFF;
+}
