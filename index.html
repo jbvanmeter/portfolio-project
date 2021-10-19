@@ -13,84 +13,123 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
     
     <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Aspect - Boost the Power of Your Financial Data</title>
-    <link rel="shortcut icon" type="image/png" href="../images/logo-icon.png" />
+    <title>Aspect - Get to Know Your Finances</title>
+    <link rel="shortcut icon" type="image/png" href="images/logo-icon.png" />
 
 </head>
-<body class="index-background">
+<body>
 
     <!-- PAGE CONTENT -->
     <div class="d-flex h-100 w-100 flex-column">
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-sm navbar-dark p-3 sticky-top">
+        <nav class="navbar navbar-expand-md p-3 fade-content">
             <div class="container-fluid">
                 <!-- NAVBAR LOGO -->
-                <a class="navbar-brand" href="#"><img src="../images/logo-icon.png" height="45px" /></a>
+                <a class="navbar-brand" href="#"><img src="/images/logo.png" height="90px" alt="Aspect Logo"/></a>
                 <!-- NAVBAR HAMBURGER (FOR <=SMALL VIEWPORTS)-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#aspectNavbar">
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#aspectNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- NAVBAR LINKS -->
                 <div class="collapse navbar-collapse" id="aspectNavbar">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active mr-2"><a class="nav-link" href="#"> Login</a></li>
-                        <li class="nav-item mr-2"><a class="nav-link" href="#"> About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+                        <li class="nav-item text-center active p-1 mr-2"><a class="nav-link" href="#"> Home</a></li>
+                        <li class="nav-item text-center p-1 mr-2"><a class="nav-link" href="#"> Overview</a></li>
+                        <li class="nav-item text-center p-1"><a class="nav-link" href="#"> Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- INDEX.HTML LOGIN -->
-        <div class="d-flex flex-column p-3 mt-auto mb-auto">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col pb-4">
-                        <img class="d-block mx-auto" src=../images/logo.png height="100px" />
-                    </div>
+        <!-- HOME SCREEN BODY-->
+        <div class="container-fluid my-auto fade-content index-text-content">
+
+            <!-- HOME SCREEN HEADER -->
+            <div class="row justify-content-center">
+                <header class="col sm-8 p-3 text-center">
+                        <h1>Become a you expert.</h1>
+                </header>
+            </div>
+
+            <!-- HOME SCREEN DESCRIPTION -->
+            <div class="row justify-content-center">
+                <div class="col-sm-8 p-3 text-center">                
+                    <p>Your financial data is a powerful asset - and presentation is <i>everything</i>. Leverage your data the way businesses do to make informed decisions about saving, spending, and managing debt. Simplify, take control, and never look back.</p>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-9 col-sm-6 col-md-5 col-lg-4">
-                        <form>
-                            <div class="form-group">
-                                <label class="sr-only" for="email">Email Address:</label>
-                                <input type="email" class="form-control" placeholder="Email" id="email">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="pwd">Password:</label>
-                                <input type="password" class="form-control" placeholder="Password" id="pwd">
-                            </div>
-                            <div class="form-group form-check text-white text-center">
-                                <small>
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox"> Remember Me
-                                    </label>
-                                </small>
-                            </div>
-                            <div class="form-group d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary mr-2">Login</button>
-                                <button type="button" class="btn btn-secondary">Sign-Up</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>                   
+            </div>
+
         </div>
 
-    <!-- FOOTER TO CENTER PAGE CONTENT VERTICALLY -->
+        <!-- HOME SCREEN BUTTONS -->
+        <div class="container mb-auto fade-content">
+            <div class="row justify-content-center">
+                <div class="col-sm-3 btn btn-lg btn-outline-success py-3 my-2 mx-3 index-button-sign-in">
+                    Sign-In
+                </div>
+                <div class="col-sm-3 btn btn-lg btn-outline-primary py-3 my-2 mx-3 index-button-register">
+                    Register
+                </div>
+                <div class="col-sm-3 btn btn-lg btn-outline-secondary py-3 my-2 mx-3 index-button-learn">
+                    Learn More
+                </div>
+            </div>
+        </div>
+
+        <!-- MEMBER LOGIN MODAL -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img class="d-block mx-auto" src=/images/logo.png height="100px" />
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="email">Email Address:</label>
+                                    <input type="email" class="form-control" placeholder="Email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="pwd">Password:</label>
+                                    <input type="password" class="form-control" placeholder="Password" id="pwd">
+                                </div>
+                                <div class="form-group form-check text-white text-center">
+                                    <small>
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox"> Remember Me
+                                        </label>
+                                    </small>
+                                </div>
+                                <div class="form-group d-flex justify-content-center">
+                                    <button type="submit" class="btn btn-primary mr-2">Login</button>
+                                    <button type="button" class="btn btn-secondary">Password Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- BOOTSTRAP JS REQUIREMENTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- EXTERNAL SCRIPTS SHEET -->
+
+    <script src="js/scripts.js"></script>
 
 </body>
 </html>
