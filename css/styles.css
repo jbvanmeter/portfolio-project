@@ -1,19 +1,34 @@
 /* LOGO COLOR PALETTE */
-/* CLASS AND ELEMENT COLORS */
+/* NAVBAR COLORS */
 /* 80% opacity */
 /* 50% opacity */
 /* 30% opacity */
+/* INDEX PAGE BODY COLORS */
+/* 15% opacity */
+/* 5% opacity */
 /* 10% opacity */
-/* 10% opacity */
+/* 90% opacity */
+/* 90% opacity */
+/* 70% opacity */
+/* 80% opacity */
+/* 50% opacity */
+/* 70% opacity */
+/* 80% opacity */
+/* 50% opacity */
+/* 70% opacity */
+/* 80% opacity */
+/* 50% opacity */
 /* FONTS */
+/*$primary-font: "Raleway", sans-serif;*/
+/*$primary-font: "Urbanist", sans-serif;*/
 html, body {
   height: 100%;
   width: 100%; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Manrope", sans-serif;
   color: #0D0F13;
-  /*background: linear-gradient(270deg, white, #37414F4D);
+  /*background: linear-gradient(270deg, white, #91969e);
         background-size: 400% 400%;
     
         -webkit-animation: AnimationName 30s ease infinite;
@@ -21,61 +36,85 @@ body {
         animation: AnimationName 30s ease infinite;
 
     
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:0% 50%}
-        50%{background-position:100% 50%}
-        100%{background-position:0% 50%}
-    }*/ }
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }*/ }
 
 .fade-content {
   display: none; }
 
 .navbar {
   background: linear-gradient(to bottom, #222831CC, #37414F80);
-  font-weight: 500;
-  text-shadow: 1px 1px #0D0F13; }
+  font-weight: 400;
+  text-shadow: 0.5px 0.5px #0D0F13; }
   .navbar .active .nav-link {
     background: #37414F4D;
     border: 1px inset #37414F;
-    color: #D8C690; }
+    border-radius: .25rem;
+    color: #CBB26A; }
   .navbar .nav-link {
     color: #E9E9E9; }
-  .navbar .nav-link:hover {
-    color: white; }
+    .navbar .nav-link:hover {
+      color: #D8C690; }
 
 .index-text-content {
-  background: #37414F1A;
-  border: 4px groove #37414F1A; }
+  background: linear-gradient(to bottom, #37414F26, #37414F0D);
+  border: 4px outset #37414F1A; }
+  @media (max-width: 768px) {
+    .index-text-content {
+      border: none; } }
   .index-text-content h1 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 65px;
+    font-weight: 500;
     color: #222831; }
+    @media (max-width: 768px) {
+      .index-text-content h1 {
+        font-size: 42px; } }
   .index-text-content p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300; }
+    @media (max-width: 768px) {
+      .index-text-content p {
+        font-size: 15px; } }
 
-.index-button-sign-in {
-  background-color: #28A7450D;
-  /* 5% opacity */ }
+.btn-green {
+  background: linear-gradient(to bottom, #198754, #198754B3);
+  color: white;
+  border: 1px outset #198754; }
+  .btn-green:hover, .btn-green:focus, .btn-green:active {
+    background: linear-gradient(to bottom, #198754CC, #19875480);
+    border: 1px inset #198754CC; }
 
-.index-button-register {
-  background-color: #007BFF0D;
-  /* 5% opacity */ }
+.btn-gold {
+  background: linear-gradient(to bottom, #CCAB47, #CCAB47B3);
+  color: white;
+  border: 1px outset #CCAB47; }
+  .btn-gold:hover, .btn-gold:focus, .btn-gold:active {
+    background: linear-gradient(to bottom, #CCAB47CC, #CBB26A80);
+    border: 1px inset #CCAB47CC; }
 
-.index-button-learn {
-  background-color: #6C757D0D;
-  /* 5% opacity */ }
+.btn-blue {
+  background: linear-gradient(to bottom, #0D6EFD, #0D6EFDB3);
+  color: white;
+  border: 1px outset #0D6EFD; }
+  .btn-blue:hover, .btn-blue:focus, .btn-blue:active {
+    background: linear-gradient(to bottom, #0D6EFDCC, #0D6EFD80);
+    border: 1px inset #0D6EFD; }
 
-.memberLogin {
-  background: linear-gradient(to bottom, #222831, #37414F);
+.member-login {
+  background: #37414FE6;
   border: 2px outset #37414F; }
+  .member-login .modal-header {
+    border-bottom: none; }
