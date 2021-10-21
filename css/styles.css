@@ -61,9 +61,8 @@ body {
   text-shadow: 0.5px 0.5px #0D0F13; }
   .navbar .active .nav-link {
     background: #37414F4D;
-    border: 1px inset #37414F;
     border-radius: .25rem;
-    color: #CBB26A; }
+    color: #D8C690; }
   .navbar .nav-link {
     color: #E9E9E9; }
     .navbar .nav-link:hover {

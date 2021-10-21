@@ -9,7 +9,7 @@ $logo-black: #0D0F13;
 $nav-dark-grey: #222831CC; /* 80% opacity */
 $nav-light-grey: #37414F80; /* 50% opacity */
 $nav-link: #E9E9E9;
-$nav-link-active: #CBB26A;
+$nav-link-active: #D8C690;
 $nav-link-active-background: #37414F4D; /* 30% opacity */
 $nav-link-active-border: #37414F;
 $nav-link-hover: #D8C690;
@@ -85,7 +85,6 @@ body {
     .active {
         .nav-link {
             background: $nav-link-active-background;
-            border: 1px inset $nav-link-active-border;
             border-radius: .25rem;
             color: $nav-link-active;
         }
