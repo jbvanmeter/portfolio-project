@@ -6,35 +6,38 @@ $logo-light-gold: #D8C690;
 $logo-black: #0D0F13;
 
 /* NAVBAR COLORS */
-$nav-dark-grey: #222831CC; /* 80% opacity */
-$nav-light-grey: #37414F80; /* 50% opacity */
+$nav-dark: #222831CC; /* (CC) 80% opacity */
+$nav-light: #37414F80; /* (80) 50% opacity */
 $nav-link: #E9E9E9;
 $nav-link-active: #D8C690;
-$nav-link-active-background: #37414F4D; /* 30% opacity */
+$nav-link-active-background: #37414F4D; /* (4D) 30% opacity */
 $nav-link-active-border: #37414F;
 $nav-link-hover: #D8C690;
 
 /* INDEX PAGE BODY COLORS */
-$index-content-background-dark-grey: #37414F26; /* 15% opacity */
-$index-content-background-light-grey: #37414F0D; /* 5% opacity */
-$index-content-border: #37414F1A; /* 10% opacity */
+$index-content-background-dark: #37414F26; /* (26) 15% opacity */
+$index-content-background-light: #37414F0D; /* (0D) 5% opacity */
+$index-content-border: #37414F1A; /* (1A) 10% opacity */
 $index-content-header: #222831;
 $body-text: #0D0F13;
-$sign-in-dark-grey: #222831E6; /* 90% opacity */
-$sign-in-light-grey: #37414FE6; /* 90% opacity */
-$sign-in-border: #37414F;
 $menu-button-green: #198754;
-$menu-button-light-green: #198754B3; /* 70% opacity */
-$menu-button-green-secondary: #198754CC; /* 80% opacity */
-$menu-button-light-green-secondary: #19875480; /* 50% opacity */
+$menu-button-light-green: #198754B3; /* (B3) 70% opacity */
+$menu-button-green-secondary: #198754CC; /* (CC) 80% opacity */
+$menu-button-light-green-secondary: #19875480; /* (80) 50% opacity */
 $menu-button-gold: #CCAB47;
-$menu-button-light-gold: #CCAB47B3; /* 70% opacity */
-$menu-button-gold-secondary: #CCAB47CC; /* 80% opacity */
-$menu-button-light-gold-secondary: #CBB26A80; /* 50% opacity */
+$menu-button-light-gold: #CCAB47B3; /* (B3) 70% opacity */
+$menu-button-gold-secondary: #CCAB47CC; /* (CC) 80% opacity */
+$menu-button-light-gold-secondary: #CBB26A80; /* (80) 50% opacity */
 $menu-button-blue: #0D6EFD;
-$menu-button-light-blue: #0D6EFDB3; /* 70% opacity */
-$menu-button-blue-secondary: #0D6EFDCC; /* 80% opacity */
-$menu-button-light-blue-secondary: #0D6EFD80; /* 50% opacity */
+$menu-button-light-blue: #0D6EFDB3; /* (B3) 70% opacity */
+$menu-button-blue-secondary: #0D6EFDCC; /* (CC) 80% opacity */
+$menu-button-light-blue-secondary: #0D6EFD80; /* (80) 50% opacity */
+
+/* MODAL COLORS */
+$login-modal: #222831E6; /* (E6) 90% opacity */
+$login-border: #222831;
+$reg-modal: #222831E6; /* (E6) 90% opacity */
+$reg-border: #222831;
 
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
@@ -79,7 +82,7 @@ body {
 }
 
 .navbar {
-    background: linear-gradient(to bottom, $nav-dark-grey, $nav-light-grey);
+    background: linear-gradient(to bottom, $nav-dark, $nav-light);
     font-weight: 300;
     text-shadow: .5px .5px $body-text;
     .active {
@@ -98,7 +101,7 @@ body {
 }
 
 .index-text-content {
-    background: linear-gradient(to bottom, $index-content-background-dark-grey, $index-content-background-light-grey);
+    background: linear-gradient(to bottom, $index-content-background-dark, $index-content-background-light);
     border: 4px outset $index-content-border;
     @media (max-width: 768px) {
         border: none;
@@ -154,8 +157,16 @@ body {
 }
 
 .member-login {
-    background: $sign-in-light-grey;
-    border: 2px outset $sign-in-border;
+    background: $login-modal;
+    border: 2px outset $login-border;
+    .modal-header {
+        border-bottom: none;
+    }
+}
+
+.new-reg {
+    background: $reg-modal;
+    border: 2px outset $reg-border;
     .modal-header {
         border-bottom: none;
     }

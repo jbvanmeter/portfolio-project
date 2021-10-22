@@ -1,23 +1,24 @@
 /* LOGO COLOR PALETTE */
 /* NAVBAR COLORS */
-/* 80% opacity */
-/* 50% opacity */
-/* 30% opacity */
+/* (CC) 80% opacity */
+/* (80) 50% opacity */
+/* (4D) 30% opacity */
 /* INDEX PAGE BODY COLORS */
-/* 15% opacity */
-/* 5% opacity */
-/* 10% opacity */
-/* 90% opacity */
-/* 90% opacity */
-/* 70% opacity */
-/* 80% opacity */
-/* 50% opacity */
-/* 70% opacity */
-/* 80% opacity */
-/* 50% opacity */
-/* 70% opacity */
-/* 80% opacity */
-/* 50% opacity */
+/* (26) 15% opacity */
+/* (0D) 5% opacity */
+/* (1A) 10% opacity */
+/* (B3) 70% opacity */
+/* (CC) 80% opacity */
+/* (80) 50% opacity */
+/* (B3) 70% opacity */
+/* (CC) 80% opacity */
+/* (80) 50% opacity */
+/* (B3) 70% opacity */
+/* (CC) 80% opacity */
+/* (80) 50% opacity */
+/* MODAL COLORS */
+/* (E6) 90% opacity */
+/* (E6) 90% opacity */
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
 /*$primary-font: "Urbanist", sans-serif;*/
@@ -116,7 +117,13 @@ body {
     border: 1px inset #0D6EFD; }
 
 .member-login {
-  background: #37414FE6;
-  border: 2px outset #37414F; }
+  background: #222831E6;
+  border: 2px outset #222831; }
   .member-login .modal-header {
+    border-bottom: none; }
+
+.new-reg {
+  background: #222831E6;
+  border: 2px outset #222831; }
+  .new-reg .modal-header {
     border-bottom: none; }

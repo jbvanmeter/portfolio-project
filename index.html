@@ -63,14 +63,14 @@
             <!-- HOME SCREEN HEADER -->
             <div class="row justify-content-center">
                 <header class="col sm-8 p-3 text-center">
-                        <h1>Amplify your perspective.</h1>
+                        <h1>Get to know your finances.</h1>
                 </header>
             </div>
 
             <!-- HOME SCREEN DESCRIPTION -->
             <div class="row justify-content-center">
                 <div class="col-sm-8 p-3 text-center">                
-                    <p>Your financial data is a powerful asset - and presentation is everything. The Aspect platform allows you to leverage your data to make informed decisions about spending, saving, and managing debt. Consolidate your data, simplify your choices, take full control of your finances, and never look back.</p>
+                    <p>The Aspect platform allows you to consolidate and leverage your financial data to make informed decisions about spending, saving, managing debt, and exploring opportunities for growth. It presents a new and soothingly pragmatic way to view and interact with your financial reality, flexibly providing focus for both the short and long term. Amplify your perspective and start living on financial autopilot.</p>
                 </div>
             </div>
 
@@ -82,10 +82,10 @@
                 <div class="col-sm-3 btn btn-lg btn-default btn-green py-3 my-2 mx-3" data-toggle="modal" data-target="#loginModal">
                     Sign-In
                 </div>
-                <div class="col-sm-3 btn btn-lg btn-default btn-gold py-3 my-2 mx-3">
+                <div class="col-sm-3 btn btn-lg btn-default btn-blue py-3 my-2 mx-3" data-toggle="modal" data-target="#regModal">
                     Register
                 </div>
-                <div class="col-sm-3 btn btn-lg btn-default btn-blue py-3 my-2 mx-3">
+                <div class="col-sm-3 btn btn-lg btn-default btn-gold py-3 my-2 mx-3">
                     Learn More
                 </div>
             </div>
@@ -95,18 +95,16 @@
         <div id="loginModal" class="modal fade" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content member-login">
-                    <div class="container-fluid modal-header">
-                        <img class="d-block" src=/images/logo.png alt="Aspect Logo Icon" height="70px" />
+                    <div class="modal-header">
+                        <img class="d-block" src=/images/logo.png alt="Aspect Logo" height="70px" />
                         <button type="button" class="close ml-0 text-light" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <div class="container-fluid">
+                        <div class="container">
                             <form>
                                 <div class="form-group">
                                     <label class="sr-only" for="email">Email Address:</label>
-                                    <input type="email" class="form-control" placeholder="Email" id="email">
-                                </div>
-                                <div class="form-group">
+                                    <input type="email" class="form-control mb-3" placeholder="Email" id="email">
                                     <label class="sr-only" for="pwd">Password:</label>
                                     <input type="password" class="form-control" placeholder="Password" id="pwd">
                                 </div>
@@ -117,9 +115,43 @@
                                         </label>
                                     </small>
                                 </div>
-                                <div class="form-group d-flex justify-content-center">
-                                    <button type="submit" class="btn btn-success mr-2">Login</button>
-                                    <button type="button" class="btn btn-primary">Reset Password</button>
+                                <div class="form-group row">
+                                    <button type="submit" class="d-block btn btn-default btn-green ml-auto mr-2">Login</button>
+                                    <button type="button" class="d-block btn btn-default btn-gold mr-auto">Reset Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REGISTRATION MODAL -->
+        <div id="regModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content new-reg">
+                    <div class="modal-header">
+                        <img class="d-block" src=/images/logo.png alt="Aspect Logo" height="70px" />
+                        <button type="button" class="close ml-0 text-light" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="firstName">First Name:</label>
+                                    <input type="text" class="form-control mb-3" placeholder="First Name" id="firstName">
+                                    <label class="sr-only" for="lastName">Last Name:</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Last Name" id="lastName">
+                                    <label class="sr-only" for="newEmail">Email:</label>
+                                    <input type="email" class="form-control mb-3" placeholder="Email Address" id="newEmail">
+                                    <label class="sr-only" for="newPwd">Choose Password:</label>
+                                    <input type="password" class="form-control mb-3" placeholder="Choose Password" id="newPwd">
+                                    <label class="sr-only" for="newPwdConfirm">Confirm Password:</label>
+                                    <input type="password" class="form-control" placeholder="Confirm Password" id="newPwdConfirm">
+                                </div>
+                                </br>
+                                <div class="form-group">
+                                    <button type="submit" class="d-block btn btn-default btn-blue mx-auto">Create Your Account</button>
                                 </div>
                             </form>
                         </div>
