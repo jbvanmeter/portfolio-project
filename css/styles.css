@@ -19,6 +19,8 @@
 /* MODAL COLORS */
 /* (E6) 90% opacity */
 /* (E6) 90% opacity */
+/* (E6) 90% opacity */
+/* (E6) 90% opacity */
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
 /*$primary-font: "Urbanist", sans-serif;*/
@@ -56,6 +58,7 @@ body {
 .fade-content {
   display: none; }
 
+/* NAVIGATION BAR */
 .navbar {
   background: linear-gradient(to bottom, #222831CC, #37414F80);
   font-weight: 300;
@@ -69,6 +72,7 @@ body {
     .navbar .nav-link:hover {
       color: #D8C690; }
 
+/* INDEX.HTML BODY CONTENT */
 .index-text-content {
   background: linear-gradient(to bottom, #37414F26, #37414F0D);
   border: 4px outset #37414F1A; }
@@ -88,6 +92,13 @@ body {
     @media (max-width: 768px) {
       .index-text-content p {
         font-size: 15px; } }
+
+.button-link {
+  text-decoration: none;
+  color: white; }
+  .button-link:hover, .button-link:focus, .button-link:active {
+    text-decoration: none;
+    color: white; }
 
 .btn-green {
   background: linear-gradient(to bottom, #198754, #198754B3);
@@ -116,6 +127,7 @@ body {
     background: linear-gradient(to bottom, #0D6EFDCC, #0D6EFD80);
     border: 1px inset #0D6EFD; }
 
+/* INDEX.HTML MODALS */
 .member-login {
   background: #222831E6;
   border: 2px outset #222831; }
@@ -127,3 +139,27 @@ body {
   border: 2px outset #222831; }
   .new-reg .modal-header {
     border-bottom: none; }
+
+.reg-conf {
+  background: #222831E6;
+  border: 2px outset #222831; }
+  .reg-conf .modal-header {
+    border-bottom: none; }
+  .reg-conf h1 {
+    color: #D8C690;
+    font-size: 30px;
+    font-weight: 500; }
+  .reg-conf p {
+    color: #E9E9E9; }
+
+.reset-pwd {
+  background: #222831E6;
+  border: 2px outset #222831; }
+  .reset-pwd .modal-header {
+    border-bottom: none; }
+  .reset-pwd h1 {
+    color: #D8C690;
+    font-size: 30px;
+    font-weight: 500; }
+  .reset-pwd p {
+    color: #E9E9E9; }

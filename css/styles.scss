@@ -8,11 +8,11 @@ $logo-black: #0D0F13;
 /* NAVBAR COLORS */
 $nav-dark: #222831CC; /* (CC) 80% opacity */
 $nav-light: #37414F80; /* (80) 50% opacity */
-$nav-link: #E9E9E9;
-$nav-link-active: #D8C690;
+$nav-link-text: #E9E9E9;
+$nav-link-text-active: #D8C690;
 $nav-link-active-background: #37414F4D; /* (4D) 30% opacity */
 $nav-link-active-border: #37414F;
-$nav-link-hover: #D8C690;
+$nav-link-text-hover: #D8C690;
 
 /* INDEX PAGE BODY COLORS */
 $index-content-background-dark: #37414F26; /* (26) 15% opacity */
@@ -38,6 +38,14 @@ $login-modal: #222831E6; /* (E6) 90% opacity */
 $login-border: #222831;
 $reg-modal: #222831E6; /* (E6) 90% opacity */
 $reg-border: #222831;
+$conf-modal: #222831E6; /* (E6) 90% opacity */
+$conf-border: #222831;
+$conf-header-text: #D8C690;
+$conf-body-text: #E9E9E9;
+$reset-modal: #222831E6; /* (E6) 90% opacity */
+$reset-border: #222831;
+$reset-header-text: #D8C690;
+$reset-body-text: #E9E9E9;
 
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
@@ -81,6 +89,8 @@ body {
     display: none;
 }
 
+/* NAVIGATION BAR */
+
 .navbar {
     background: linear-gradient(to bottom, $nav-dark, $nav-light);
     font-weight: 300;
@@ -89,16 +99,18 @@ body {
         .nav-link {
             background: $nav-link-active-background;
             border-radius: .25rem;
-            color: $nav-link-active;
+            color: $nav-link-text-active;
         }
     }
     .nav-link {
-        color: $nav-link;
+        color: $nav-link-text;
         &:hover {
-            color: $nav-link-hover;
+            color: $nav-link-text-hover;
         }
     }
 }
+
+/* INDEX.HTML BODY CONTENT */
 
 .index-text-content {
     background: linear-gradient(to bottom, $index-content-background-dark, $index-content-background-light);
@@ -120,6 +132,15 @@ body {
         @media (max-width: 768px) {
             font-size: 15px;
         }
+    }
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: white;
     }
 }
 
@@ -156,6 +177,8 @@ body {
     }
 }
 
+/* INDEX.HTML MODALS */
+
 .member-login {
     background: $login-modal;
     border: 2px outset $login-border;
@@ -169,5 +192,37 @@ body {
     border: 2px outset $reg-border;
     .modal-header {
         border-bottom: none;
+    }
+}
+
+.reg-conf {
+    background: $conf-modal;
+    border: 2px outset $conf-border;
+    .modal-header {
+        border-bottom: none;
+    }
+    h1 {
+        color: $conf-header-text;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    p {
+        color: $conf-body-text;
+    }
+}
+
+.reset-pwd {
+    background: $reset-modal;
+    border: 2px outset $reset-border;
+    .modal-header {
+        border-bottom: none;
+    }
+    h1 {
+        color: $reset-header-text;
+        font-size: 30px;
+        font-weight: 500;
+    }
+    p {
+        color: $reset-body-text;
     }
 }

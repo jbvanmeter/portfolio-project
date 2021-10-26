@@ -50,44 +50,44 @@
                 <div class="collapse navbar-collapse" id="aspectNavbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item text-center active p-1 mr-2"><a class="nav-link" href="#">Home</a></li>
-                        <li class="nav-item text-center p-1 mr-2"><a class="nav-link" href="#">Overview</a></li>
-                        <li class="nav-item text-center p-1 mr-2"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item text-center p-1 mr-2"><a class="nav-link" href="overview.html">Overview</a></li>
+                        <li class="nav-item text-center p-1 mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- HOME SCREEN BODY-->
+        <!-- INDEX.HTML BODY-->
         <div class="container-fluid my-auto fade-content index-text-content">
 
-            <!-- HOME SCREEN HEADER -->
+            <!-- INDEX.HTML HEADER -->
             <div class="row justify-content-center">
                 <header class="col sm-8 p-3 text-center">
                         <h1>Get to know your finances.</h1>
                 </header>
             </div>
 
-            <!-- HOME SCREEN DESCRIPTION -->
+            <!-- INDEX.HTML DESCRIPTION -->
             <div class="row justify-content-center">
                 <div class="col-sm-8 p-3 text-center">                
-                    <p>The Aspect platform allows you to consolidate and leverage your financial data to make informed decisions about spending, saving, managing debt, and exploring opportunities for growth. It presents a new and soothingly pragmatic way to view and interact with your financial reality, flexibly providing focus for both the short and long term. Amplify your perspective and start living on financial autopilot.</p>
+                    <p>Aspect is a powerful organizational dashboarding platform designed to consolidate and interpret your financial data, allowing you to make informed decisions about spending, saving, managing debt, and exploring opportunities for growth. It presents a new and soothingly pragmatic way to view and interact with your financial reality, flexibly providing focus for both short and long term criteria. Amplify your perspective and let your data work for you.</p>
                 </div>
             </div>
 
         </div>
 
-        <!-- HOME SCREEN BUTTONS -->
+        <!-- INDEX.HTML BUTTONS -->
         <div class="container mb-auto fade-content">
             <div class="row justify-content-center">
-                <div class="col-sm-3 btn btn-lg btn-default btn-green py-3 my-2 mx-3" data-toggle="modal" data-target="#loginModal">
+                <button type="button" class="col-sm-3 btn btn-lg btn-default btn-green py-3 my-1 mx-3" data-toggle="modal" data-target="#loginModal">
                     Sign-In
-                </div>
-                <div class="col-sm-3 btn btn-lg btn-default btn-blue py-3 my-2 mx-3" data-toggle="modal" data-target="#regModal">
+                </button>
+                <button type="button" class="col-sm-3 btn btn-lg btn-default btn-blue py-3 my-1 mx-3" data-toggle="modal" data-target="#regModal">
                     Register
-                </div>
-                <div class="col-sm-3 btn btn-lg btn-default btn-gold py-3 my-2 mx-3">
+                </button>
+                <a class="col-sm-3 btn btn-lg btn-default btn-gold py-3 my-1 mx-3 button-link" href="overview.html">
                     Learn More
-                </div>
+                </a>
             </div>
         </div>
 
@@ -117,7 +117,38 @@
                                 </div>
                                 <div class="form-group row">
                                     <button type="submit" class="d-block btn btn-default btn-green ml-auto mr-2">Login</button>
-                                    <button type="button" class="d-block btn btn-default btn-gold mr-auto">Reset Password</button>
+                                    <button type="button" class="d-block btn btn-default btn-gold mr-auto" data-toggle="modal" data-target="#resetModal" data-dismiss="modal">Reset Password</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RESET PASSWORD MODAL -->
+        <div id="resetModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content reset-pwd">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col text-center">
+                                    <h1>Enter your email address:</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <form>
+                                <div class="form-group">
+                                    <label class="sr-only" for="resetEmail">Email Address:</label>
+                                    <input type="email" class="form-control mb-3" placeholder="Email" id="resetEmail">
+                                </div>
+                                </br>
+                                <div class="form-group">
+                                    <button type="submit" class="d-block btn btn-default btn-gold mx-auto" data-dismiss="modal">Send Password Reset Link</button>
                                 </div>
                             </form>
                         </div>
@@ -151,9 +182,41 @@
                                 </div>
                                 </br>
                                 <div class="form-group">
-                                    <button type="submit" class="d-block btn btn-default btn-blue mx-auto">Create Your Account</button>
+                                    <button type="submit" class="d-block btn btn-default btn-blue mx-auto w-100" data-toggle="modal" data-target="#confModal" data-dismiss="modal">Create Your Account</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- REGISTRATION CONFIRMATION MODAL -->
+        <div id="confModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content reg-conf">
+                    <div class="modal-header">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col text-center">
+                                    <h1>Welcome to Aspect!</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <p>Check your email for a confirmation link and click on the link to complete your account registration.</br></br>After you have successfully signed in, you will be prompted to begin creating your financial dashboard. This streamlined process has been designed to make inputting your essential financial information as easy as possible.</p>
+                                </div>
+                            </div>
+                            </br>
+                            <div class="row justify-content-center">
+                                <div class="col">
+                                    <button type="button" class="d-block btn btn-default btn-gold mx-auto w-50" data-dismiss="modal">OK</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
