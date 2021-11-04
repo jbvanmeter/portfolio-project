@@ -3,7 +3,7 @@
 /* (CC) 80% opacity */
 /* (80) 50% opacity */
 /* (4D) 30% opacity */
-/* INDEX PAGE BODY COLORS */
+/* INDEX.HTML BODY COLORS */
 /* (26) 15% opacity */
 /* (0D) 5% opacity */
 /* (1A) 10% opacity */
@@ -16,11 +16,13 @@
 /* (B3) 70% opacity */
 /* (CC) 80% opacity */
 /* (80) 50% opacity */
-/* MODAL COLORS */
+/* INDEX.HTML MODAL COLORS */
 /* (E6) 90% opacity */
 /* (E6) 90% opacity */
 /* (E6) 90% opacity */
 /* (E6) 90% opacity */
+/* CONTACT.HTML BODY COLORS */
+/* (1A) 10% opacity */
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
 /*$primary-font: "Urbanist", sans-serif;*/
@@ -104,28 +106,25 @@ body {
   background: linear-gradient(to bottom, #198754, #198754B3);
   color: white;
   font-weight: 200;
-  border: 1px outset #198754; }
+  border: 1px outset #E9E9E9; }
   .btn-green:hover, .btn-green:focus, .btn-green:active {
-    background: linear-gradient(to bottom, #198754CC, #19875480);
-    border: 1px inset #198754CC; }
+    background: linear-gradient(to bottom, #198754CC, #19875480); }
 
 .btn-gold {
   background: linear-gradient(to bottom, #CCAB47, #CCAB47B3);
   color: white;
   font-weight: 200;
-  border: 1px outset #CCAB47; }
+  border: 1px outset #E9E9E9; }
   .btn-gold:hover, .btn-gold:focus, .btn-gold:active {
-    background: linear-gradient(to bottom, #CCAB47CC, #CBB26A80);
-    border: 1px inset #CCAB47CC; }
+    background: linear-gradient(to bottom, #CCAB47CC, #CBB26A80); }
 
 .btn-blue {
   background: linear-gradient(to bottom, #0D6EFD, #0D6EFDB3);
   color: white;
   font-weight: 200;
-  border: 1px outset #0D6EFD; }
+  border: 1px outset #E9E9E9; }
   .btn-blue:hover, .btn-blue:focus, .btn-blue:active {
-    background: linear-gradient(to bottom, #0D6EFDCC, #0D6EFD80);
-    border: 1px inset #0D6EFD; }
+    background: linear-gradient(to bottom, #0D6EFDCC, #0D6EFD80); }
 
 /* INDEX.HTML MODALS */
 .member-login {
@@ -150,7 +149,8 @@ body {
     font-size: 30px;
     font-weight: 500; }
   .reg-conf p {
-    color: #E9E9E9; }
+    color: #E9E9E9;
+    font-weight: 300; }
 
 .reset-pwd {
   background: #222831E6;
@@ -163,3 +163,12 @@ body {
     font-weight: 500; }
   .reset-pwd p {
     color: #E9E9E9; }
+
+.contact-icon {
+  color: #CBB26A; }
+
+.contact-option {
+  border: 2px outset #E9E9E9;
+  background: white; }
+  .contact-option:hover, .contact-option:focus, .contact-option:active {
+    background: #37414F1A; }

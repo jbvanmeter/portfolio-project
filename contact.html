@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/5af3e066b6.js" crossorigin="anonymous"></script>
     
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,22 +57,50 @@
             </div>
         </nav>
 
-        <!-- OVERVIEW.HTML BODY-->
-        <div class="container-fluid my-auto fade-content index-text-content">
+        <!-- CONTACT.HTML BODY-->
+        <div class="container-fluid my-auto fade-content">
 
-            <!-- OVERVIEW.HTML HEADER -->
+            <!-- CONTACT.HTML OPTIONS -->
             <div class="row justify-content-center">
-                <header class="col sm-8 p-3 text-center">
-                        <h1>Header</h1>
-                </header>
-            </div>
+                <button class="col-8 btn btn-default contact-option text-center mx-2 my-3 p-3" type="button" data-toggle="collapse" data-target="#phoneOption" aria-expanded="false" aria-controls="phoneOption">
+                    <i class="fa fa-phone fa-4x contact-icon"></i>
+                    <div class="collapse mt-4" id="phoneOption">
+                        <div class="card card-body text-center">
+                            <em>Phone is currently unavailable.</em>
+                        </div>
+                    </div>
+                </button>
 
-            <!-- OVERVIEW.HTML DESCRIPTION -->
-            <div class="row justify-content-center">
-                <div class="col-sm-8 p-3 text-center">                
-                    <p>Content</p>
+                <button class="col-8 btn btn-default contact-option text-center mx-2 my-3 p-3" type="button" data-toggle="collapse" data-target="#chatOption" aria-expanded="false" aria-controls="chatOption">
+                    <i class="fa fa-comment-dots fa-4x contact-icon"></i>
+                    <div class="collapse mt-4" id="chatOption">
+                        <div class="card card-body text-center">
+                            <em>Chat is currently unavailable.</em>
+                        </div>
+                    </div>
+                </button>
+
+                <button class="col-8 btn btn-default contact-option text-center mx-2 my-3 p-3" type="button" data-toggle="collapse" data-target="#messageOption" aria-expanded="false" aria-controls="messageOption">
+                    <i class="fa fa-envelope fa-4x contact-icon"></i>
+                    <div class="collapse mt-4" id="messageOption">
+                        <div class="card card-body text-center">
+                            Hello there!
+                        </div>
+                    </div>
+                </button>
+
+                <!-- <div class="col-8 col-sm-2 contact-option text-center mx-2 my-3 p-3">
+                    <i class="fa fa-phone fa-3x contact-icon"></i>
                 </div>
+                    
+                <div class="col-8 col-sm-2 contact-option text-center mx-2 my-3 p-3">
+                    <i class="fa fa-comment-dots fa-3x contact-icon"></i>
+                </div>
+                <div class="col-8 col-sm-2 contact-option text-center mx-2 my-3 p-3">
+                    <i class="fa fa-envelope fa-3x contact-icon"></i>
+                </div> -->
             </div>
+            
 
         </div>
 

@@ -1,0 +1,26 @@
+Budgeting
+
+The primary function of Aspect is to provide users with a straightforward daily, weekly, and monthly spending allowance figure based on a complete analysis of their income/available capital and all financial obligations - in tandem with any savings goals they may have.
+
+The idea is to ensure that living with a budget and achieving financial goals can be as easy as realizing - "here's what I can spend today."
+
+
+Data Centralization
+
+While having a heap of data in one place can seem like an overwhelming concept, it's really about how that data is parsed and organized. Data relationships that seem extensive and complex can reveal remarkably simple and profound insights. They can also help you simplify decisions by telling stories in a dispassionate context.
+
+
+Debt Management
+
+Taking on and managing debt responsibly requires risk assessments, 
+
+
+Cash Back Optimization
+
+Using credit cards for virtually all of your in-person and online purchases is not only ideal for personal security and protection from fraud - it is also an easy way to earn a surprising amount of free money from your card issuer (assuming you are able to pay your balances off before they accrue interest month-to-month). 
+
+Transaction Entry
+
+
+***As with any data analysis tool - the more information you give it, the better insights it can provide.
+

@@ -1,4 +1,7 @@
 $(function() {
-    $(".fade-content").fadeIn(1000);
+    // FADE-IN PAGE CONTENT //
+    $(".fade-content").fadeIn(1200);
+
+
 });
 

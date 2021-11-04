@@ -14,7 +14,7 @@ $nav-link-active-background: #37414F4D; /* (4D) 30% opacity */
 $nav-link-active-border: #37414F;
 $nav-link-text-hover: #D8C690;
 
-/* INDEX PAGE BODY COLORS */
+/* INDEX.HTML BODY COLORS */
 $index-content-background-dark: #37414F26; /* (26) 15% opacity */
 $index-content-background-light: #37414F0D; /* (0D) 5% opacity */
 $index-content-border: #37414F1A; /* (1A) 10% opacity */
@@ -32,8 +32,9 @@ $menu-button-blue: #0D6EFD;
 $menu-button-light-blue: #0D6EFDB3; /* (B3) 70% opacity */
 $menu-button-blue-secondary: #0D6EFDCC; /* (CC) 80% opacity */
 $menu-button-light-blue-secondary: #0D6EFD80; /* (80) 50% opacity */
+$button-border: #E9E9E9;
 
-/* MODAL COLORS */
+/* INDEX.HTML MODAL COLORS */
 $login-modal: #222831E6; /* (E6) 90% opacity */
 $login-border: #222831;
 $reg-modal: #222831E6; /* (E6) 90% opacity */
@@ -46,6 +47,11 @@ $reset-modal: #222831E6; /* (E6) 90% opacity */
 $reset-border: #222831;
 $reset-header-text: #D8C690;
 $reset-body-text: #E9E9E9;
+
+/* CONTACT.HTML BODY COLORS */
+$contact-icon: #CBB26A;
+$contact-border: #E9E9E9;;
+$contact-hover: #37414F1A; /* (1A) 10% opacity */
 
 /* FONTS */
 /*$primary-font: "Raleway", sans-serif;*/
@@ -148,10 +154,9 @@ body {
     background: linear-gradient(to bottom, $menu-button-green, $menu-button-light-green);
     color: white;
     font-weight: 200;
-    border: 1px outset $menu-button-green;
+    border: 1px outset $button-border;
     &:hover, &:focus, &:active {
         background: linear-gradient(to bottom, $menu-button-green-secondary, $menu-button-light-green-secondary);
-        border: 1px inset $menu-button-green-secondary;
     }
 }
 
@@ -159,10 +164,9 @@ body {
     background: linear-gradient(to bottom, $menu-button-gold, $menu-button-light-gold);
     color: white;
     font-weight: 200;
-    border: 1px outset $menu-button-gold;
+    border: 1px outset $button-border;
     &:hover, &:focus, &:active {
         background: linear-gradient(to bottom, $menu-button-gold-secondary, $menu-button-light-gold-secondary);
-        border: 1px inset $menu-button-gold-secondary;
     }
 }
 
@@ -170,10 +174,9 @@ body {
     background: linear-gradient(to bottom, $menu-button-blue, $menu-button-light-blue);
     color: white;
     font-weight: 200;
-    border: 1px outset $menu-button-blue;
+    border: 1px outset $button-border;
     &:hover, &:focus, &:active {
         background: linear-gradient(to bottom, $menu-button-blue-secondary, $menu-button-light-blue-secondary);
-        border: 1px inset $menu-button-blue
     }
 }
 
@@ -208,6 +211,7 @@ body {
     }
     p {
         color: $conf-body-text;
+        font-weight: 300;
     }
 }
 
@@ -224,5 +228,17 @@ body {
     }
     p {
         color: $reset-body-text;
+    }
+}
+
+.contact-icon {
+    color: $contact-icon;
+}
+
+.contact-option {
+    border: 2px outset $contact-border;
+    background: white;
+    &:hover, &:focus, &:active {
+        background: $contact-hover;
     }
 }
